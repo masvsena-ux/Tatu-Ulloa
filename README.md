@@ -1,6 +1,6 @@
 
 
-##  Ulloa Tatú
+##  ULLOA TATÚ
 Ulloa Tatú es un local ubicado en el barrio Villa del Río, dedicado a la venta de accesorios y a la realización de tatuajes y piercings, ofreciendo un servicio seguro, profesional y de calidad.
 
 ##  Justificación
@@ -26,3 +26,42 @@ Asimismo, se plantea desarrollar una página donde los clientes puedan especific
 - Mejor control de ventas e ingresos económicos
 
 - Propuesta de página informativa para definir servicios solicitados
+
+
+##  Stack Tecnológico
+
+### Backend & Web
+*   **Lenguaje:** PHP 8.x
+*   **Framework:** [Laravel](https://laravel.com/)
+*   **Base de Datos:** MySQL
+*   **Servidor Local:** Laravel Herd
+
+### Mobile
+*   **Lenguaje:** Kotlin
+*   **Entorno:** Android Studio
+*   **Comunicación:** Volley (Consumo de API REST)
+*   **Procesamiento de Imágenes:** Base64 encoding/decoding
+
+---
+
+
+##  Arquitectura de Comunicación (API REST)
+El sistema utiliza una arquitectura desacoplada donde la App Móvil consume servicios expuestos por Laravel:
+
+| Método | Endpoint | Descripción |
+| :--- | :--- | :--- |
+| `GET` | `/api/caracteristicas` |Lista categorías. |
+| `POST` | `/api/producto` | Registrar Producto. |
+| `POST` | `/api/ventas` | Registar Venta. |
+
+---
+
+
+##  Instalación y Configuración
+
+### Requisitos
+*   PHP >= 8.1
+*   Composer
+*   Laravel Herd o XAMPP
+*   Android Studio (para la App)
+
